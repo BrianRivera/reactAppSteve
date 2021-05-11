@@ -1,0 +1,81 @@
+
+
+.formContainer{
+  width: 100%;
+  display: flex;
+
+ .formSeccion{
+   width: 50%;
+   img{
+    width: 70%;
+   }
+ }
+}
+
+.form{
+  font-family: Arial, Helvetica, sans-serif;
+  color: hsla(241, 92%, 24%, 0.746);
+  margin-left: 10px;
+  p{
+    padding: 5px;
+  }
+  input{
+    height: 30px;
+    border-style: solid;
+    border-radius: 3px;
+    border-width: 1px;
+    border-color: aquamarine;
+
+    &:focus{
+      outline: none;
+
+      animation-name: anim;
+      animation-duration: 5s;
+      animation-iteration-count: infinite;
+    }
+  }
+}
+
+.buttonContainer{
+  text-align: center;
+
+  button{
+    margin-top: 10px;
+    color: beige;
+    background-color: pink;
+    width: 80px;
+    border: none;
+    border-radius: 3px;
+
+    &:hover{
+      background-color: #e2afb7;
+      transition: 0.5s;
+      cursor: pointer;
+    }
+  }
+}
+
+@keyframes anim {
+  0% {
+      border-color: #FFE80D;
+  }
+  25% {
+      border-color: #ff6600;
+  }
+  /*Naranja*/
+  50% {
+      border-color: #4a08b4;
+  }
+  /*Negro*/
+  75% {
+      border-color: #039BA6;
+  }
+  /*Otra vez naranja*/
+  95% {
+      border-color: #FFE80D;
+  }
+  100% {
+      border-color: #ff0;
+  }
+  /*Otra vez amarillo*/
+}
