@@ -10,12 +10,25 @@ const CrudApp = () => {
 	];
 
 	const [db, setDb] = useState(initialDB);
+	const [dataToEdit, setDataToEdit] = useState(null);
+
+	const createData = (data) => {};
+	const updateData = (data) => {};
+	const deleteData = (id) => {};
 
 	return (
 		<div>
-			<h2>Hola?</h2>
-			<CrudForm />
-			<CrudTable data={db} />
+			<CrudForm
+				createData={createData}
+				updateData={updateData}
+				dataToEdit={dataToEdit}
+				setDataToEdit={setDataToEdit}
+			/>
+			<CrudTable
+				data={db}
+				setDataToEdit={setDataToEdit}
+				deleteData={deleteData}
+			/>
 		</div>
 	);
 };

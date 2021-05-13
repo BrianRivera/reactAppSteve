@@ -37,7 +37,7 @@ export const Form = () => {
 				<div className="formContainer">
 					<div className="formSeccion">
 						{inputGroup.map((e, i) => (
-							<div className="form" key={i}>
+							<div className="form" key={`${i}palomo`}>
 								<p>{e.title}</p>
 								<input
 									type={e.type}
