@@ -1,0 +1,26 @@
+[
+	{
+		"id": 1,
+		"nombre": "palomo",
+		"apellido": "adsas",
+		"edad": 1221
+	},
+	{
+		"id": 2,
+		"nombre": "brian",
+		"apellido": "bfdad",
+		"edad": 5211
+	},
+	{
+		"id": 3,
+		"nombre": "kazu",
+		"apellido": "cfadg",
+		"edad": 5124
+	},
+	{
+		"id": 4,
+		"nombre": "chimi",
+		"apellido": "jdfha",
+		"edad": 4123
+	}
+]
